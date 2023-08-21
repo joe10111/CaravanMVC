@@ -1,0 +1,9 @@
+﻿@model Wagon
+
+<h1>Wagon: @Model.Name Details</h1>
+
+<p>Id: @Model.Id, Name: @Model.Name, Number of Wheels: @Model.NumWheels, Covered: @Model.Covered</p>
+
+@foreach(var passenger in Model.Passengers) {
+    <p>Passenger Name: @passenger.Name</p>
+}
